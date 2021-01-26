@@ -72,8 +72,8 @@ int main(int argc, char **argv)
     {
         geometry_msgs::Point p;
         p.x = (int32_t)i;
-        p.y = (int32_t)i;
-        p.z = (int32_t)i;
+        p.y = 5 * sin(i / 100.0f * 2 * M_PI);
+        p.z = 5 * cos(i / 100.0f * 2 * M_PI);
         points.points.push_back(p);
     }
 
